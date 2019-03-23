@@ -1,12 +1,17 @@
 {
+  "root": true,
   "env": {
-    "browser": true,
     "worker": true
   },
+  "extends": [
+    "plugin:unicorn/recommended",
+    "xo",
+    "xo/browser"
+  ],
+  "parserOptions": {
+    "sourceType": "script"
+  },
   "rules": {
-    "strict": [
-      "error",
-      "function"
-    ]
+    "strict": "error"
   }
 }

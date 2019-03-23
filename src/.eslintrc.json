@@ -1,5 +1,35 @@
 {
-  "env": {
-    "browser": true
+  "root": true,
+  "extends": [
+    "plugin:unicorn/recommended",
+    "xo",
+    "xo/browser"
+  ],
+  "parserOptions": {
+    "sourceType": "script"
+  },
+  "rules": {
+    "capitalized-comments": "off",
+    "indent": [
+      "error",
+      2,
+      {
+        "MemberExpression": "off",
+        "SwitchCase": 1
+      }
+    ],
+    "no-mixed-operators": "off",
+    "object-curly-spacing": [
+      "error",
+      "always"
+    ],
+    "space-before-function-paren": [
+      "error",
+      "never"
+    ],
+    "unicorn/filename-case": "off",
+    "unicorn/no-unused-properties": "error",
+    "unicorn/prefer-node-append": "off",
+    "unicorn/prefer-query-selector": "off"
   }
 }
